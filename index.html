@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-theme.css">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.css">
   <link rel="stylesheet" href="assets/fontawesome/css/all.css">
   <link rel="stylesheet" href="assets/fontawesome/css/brands.css">
   <link rel="stylesheet" href="assets/fontawesome/css/solid.css">
@@ -25,6 +25,172 @@
   <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
-  
+  <div id="app" data-theme="light">
+    <header id="header" class="header">
+      <div class="container-wrap grid-container">
+        <div class="header-brand">
+          <h1 class="brand">
+            <a href="javascript:;">Project</a>
+          </h1>
+          <div role="presentation" class="dropdown">
+            <button type="button" class="dropdown-toggle" data-toggle="dropdown" role="button">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <div class="dropdown-menu">
+              <div class="btn-group btn-group-justified" role="group">
+                <button type="button" class="btn btn-default active">Msgs (14)</button>
+                <button type="button" class="btn btn-default">Notify (3)</button>
+                <button type="button" class="btn btn-default">Tasks (4)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-contexts dropdown">
+          <span class="label">PROJECTS</span>
+          <span class="project-selector dropdown-toggle" data-toggle="dropdown">
+            Recent projects
+            <i class="fa-solid fa-chevron-down"></i>
+          </span>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="javascript:;">Online e-merchant management system - attaching integration with the iOS</a>
+            </li>
+            <li>
+              <a href="javascript:;">Notes on pipeline upgradee</a>
+            </li>
+            <li>
+              <a href="javascript:;">Assesment Report for merchant account</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="javascript:;"><i class="fa-solid fa-power-off"></i> Clear</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header-end">
+          <form class="searchbar" action="javascript:;" method="post">
+            <input type="text" name="" id="" placeholder="Find reports and more" autocomplete="off">
+            <button type="submit" class="btn">
+              <span class="sr-only">Submit</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+
+          <button type="button" onclick="toggleDarkMode()" class="btn">
+            <span class="sr-only">Toggle darkmode</span>
+            <i class="fa-solid fa-circle-half-stroke"></i>
+          </button>
+          <button type="button" onclick="toggleFullScreen()" class="btn">
+            <span class="sr-only">Toggle fullscreen</span>
+            <i id="fullscreen-icon" class="fa-solid fa-expand"></i>
+          </button>
+          <button type="button" class="btn">
+            <span class="sr-only">Logout</span>
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <aside id="panel" class="">
+      <div id="user-info">
+        user-info
+      </div>
+      <nav id="navbar" class="">
+        <ul>
+          <li>
+            <span>Dashboard</span>
+            <ul>
+              <li><a href="javascript:;">Analytics</a></li>
+              <li><a href="javascript:;">Marketing</a></li>
+              <li><a href="javascript:;">Social Wall</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Intel</span>
+            <ul>
+              <li><a href="javascript:;">App Layouts</a></li>
+              <li><a href="javascript:;">Prebuilt Skins</a></li>
+              <li><a href="javascript:;">App Variations</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Outlook14</span>
+            <ul>
+              <li><a href="javascript:;">Inbox</a></li>
+              <li><a href="javascript:;">Email view</a></li>
+              <li><a href="javascript:;">Compose</a></li>
+              <li><a href="javascript:;">Reply</a></li>
+              <li><a href="javascript:;">Email Templates</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Graphs</span>
+          </li>
+          <li>
+            <span>Tables</span>
+          </li>
+          <li>
+            <span>Forms</span>
+          </li>
+          <li>
+            <span>UI Elements</span>
+            <ul>
+              <li><a href="javascript:;">General Elements</a></li>
+              <li><a href="javascript:;">Buttons</a></li>
+              <li><span>Icons</span>
+                <ul>
+                  <li><a href="javascript:;">Font Awesome</a></li>
+                  <li><a href="javascript:;">Glyph Icons</a></li>
+                  <li><a href="javascript:;">Flags</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;">Grid</a></li>
+              <li><a href="javascript:;">Tree View</a></li>
+              <li><a href="javascript:;">Nestable Lists</a></li>
+              <li><a href="javascript:;">JQuery UI</a></li>
+              <li><a href="javascript:;">Typography</a></li>
+              <li><a href="javascript:;">Six Level Menu</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Widgets</span>
+          </li>
+          <li>
+            <span>Cool Features!</span>
+          </li>
+          <li>
+            <span>App Views</span>
+          </li>
+          <li>
+            <span>E-Commerce</span>
+          </li>
+          <li>
+            <span>Miscellaneous</span>
+          </li>
+          <li>
+            <span>Smart Chat API beta</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main id="main" class="">
+      <div id="ribbon">
+        <ul>
+          <li>Home</li>
+          <li>Dashboard</li>
+          <li>Analytics</li>
+        </ul>
+      </div>
+      <div id="content" class="">
+        content
+      </div>
+      <footer id="footer" class="">
+        footer
+      </footer>
+    </main>
+  </div>
 </body>
 </html>

@@ -1,1 +1,39 @@
 @charset "utf-8";
+
+:root {
+  --brand-basic: #f3f3f3;
+  --brand-dark: #474544;
+  --brand-basic-fixed: #f3f3f3;
+  --brand-dark-fixed: #474544;
+  
+  --btn-cl: #c4bab6;
+  --btn-bd: #bfbfbf;
+
+  --bs-white: #fff;
+  --bs-black: #222;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #3a3633;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f8f8;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(to bottom,#f3f3f3,#e2e2e2);
+}
+
+[data-theme="dark"] {
+  --brand-basic: #474544;
+  --brand-dark: #f3f3f3;
+  --btn-cl: #f3f3f3;
+  --btn-bd: transparent;
+
+  --bs-white: rgba(255,255,255,0.5);
+  --bs-black: #f8f8f8;
+  --bs-light: #707070;
+  --bs-gradient: linear-gradient(to bottom, #474544, #212529);
+}
