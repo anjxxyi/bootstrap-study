@@ -10,13 +10,13 @@ function toggleFullScreen() {
   }
 }
 
+
 // Full Screen icon Toggle
 function toggleFullScreenIcon() {
   const icon = document.getElementById("fullscreen-icon");
   icon.classList.toggle("fa-expand");
   icon.classList.toggle("fa-compress");
 }
-
 document.addEventListener('fullscreenchange', toggleFullScreenIcon);
 document.addEventListener('webkitfullscreenchange', toggleFullScreenIcon);
 document.addEventListener('mozfullscreenchange', toggleFullScreenIcon);
@@ -32,3 +32,10 @@ function toggleDarkMode() {
     app.setAttribute('data-theme', 'dark');
   } 
 }
+
+
+// html files load
+$(document).ready(function(){
+  $("#header").load("/components/header.html");
+  $("#navbar").load("/components/nav.html");
+});
