@@ -25,7 +25,7 @@
  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; --bs-gradient: linear-gradient(to bottom,#f3f3f3,#e2e2e2); 
 } 
 
-/* [data-theme="dark"] { 
+[data-theme="dark"] { 
   --brand-basic: #474544; 
   --brand-dark: #f3f3f3; 
   --btn-cl: #f3f3f3; 
@@ -35,4 +35,4 @@
   --bs-black: #f8f8f8; 
   --bs-light: #707070; 
   --bs-gradient: linear-gradient(to bottom, #474544, #212529); 
-}  */
+} 
