@@ -10,7 +10,6 @@ function toggleFullScreen() {
   }
 }
 
-
 // Full Screen icon Toggle
 function toggleFullScreenIcon() {
   const icon = document.getElementById("fullscreen-icon");
@@ -33,6 +32,11 @@ function toggleDarkMode() {
   } 
 }
 
+// Panel Size Toggle
+function togglePanelSize() {
+  const app = document.getElementById("app");
+  app.classList.toggle("minified");
+}
 
 // html files load
 $(document).ready(function(){

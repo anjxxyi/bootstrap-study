@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 .container-wrap { padding:0 15px; } 
 .grid-container { display:grid; } 
 
@@ -9,7 +8,7 @@
 #header .grid-container { grid-template-columns:205px auto auto; grid-gap:1em; } 
 #panel { width:220px; } 
 #panel,
-#main { height:calc(100vh - 50px); background: var(--bs-light); overflow-y:auto; } 
+#main { height:calc(100vh - 50px); overflow-y:auto; overflow:initial; } 
 
 .header-brand { display:flex; flex-flow:row; align-items:center; justify-content:space-between; } 
 .header-brand h1 { color:var(--bs-black); margin:0; padding:0; font-size:1.5em; font-weight:normal; } 
@@ -44,7 +43,7 @@
 .panel-body::before { content:''; border-left: 1px solid #c0bbb7; display:block; height:100%; position:absolute; left:1.6em; top:0; } 
 .panel-body > ul > li > a::before { content:''; display: block; position:absolute; width:5px; height:0.6px; background: #c0bbb7; left:calc(1.6em + 2px); top:50%; } 
 
-#main { grid-column:2; grid-row:2; width:calc(100vw - 220px); display:flex; flex-direction:column; } 
+#main { background: var(--bs-light); grid-column:2; grid-row:2; width:calc(100vw - 220px); display:flex; flex-direction:column; } 
 
 #ribbon { background:var(--brand-dark-fixed); color:var(--brand-basic-fixed); font-size:0.875em; padding:1em; } 
 #ribbon ul { display:inline-block; cursor: default; } 
@@ -56,3 +55,14 @@
 #content { padding:1.5em; text-align:center; } 
 
 #footer { background:var(--bs-dark); color:var(--brand-basic-fixed); text-align:center; margin-top:auto; padding:1.5em; } 
+
+
+#app.minified #panel { } 
+#app.minified #header .grid-container { grid-template-columns:205px auto auto; } 
+#app.minified #panel { width:40px; } 
+#app.minified .panel { position:relative; } 
+#app.minified .panel-heading .menu-item { width:10em; position:absolute; top:0; left:100%; background: var(--bs-gray-dark); color: var(--brand-basic-fixed); padding:0 2em; } 
+#app.minified .panel-heading .toggle-check { display: none; } 
+#app.minified .panel-collapse { width:10em; position:absolute; top:21px; left:100%; background: var(--bs-gray-dark); color: var(--brand-basic-fixed); } 
+#app.minified .panel a:not([aria-expanded="true"]) .menu-item { display: none; } 
+#app.minified #main { width:calc(100vw - 40px); } 
