@@ -8,6 +8,13 @@
   <!-- jQuery -->
   <script type="text/javascript" src="libs/jqeury/3.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    // html files load
+    $(document).ready(function(){
+      $("#header").load("/components/header.html");
+      $("#navbar").load("/components/nav.html");
+    });
+  </script>
 
   <!-- Bootstrap -->
   <script src="libs/bootstrap/js/bootstrap.js"></script>

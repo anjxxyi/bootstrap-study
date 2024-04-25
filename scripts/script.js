@@ -37,9 +37,3 @@ function togglePanelSize() {
   const app = document.getElementById("app");
   app.classList.toggle("minified");
 }
-
-// html files load
-$(document).ready(function(){
-  $("#header").load("/components/header.html");
-  $("#navbar").load("/components/nav.html");
-});
