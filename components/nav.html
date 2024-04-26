@@ -221,13 +221,16 @@
       }
 
       if ($(this).not('[role="button"]').length > 0) {
+        $(this).closest('.panel').find('.panel-heading a').addClass('active').attr('aria-expanded', 'true').find('.toggle-check i').removeClass('fa-square-plus').addClass('fa-square-minus');
+        $(this).closest('.panel-group').find('.panel-collapse').attr('aria-expanded', 'false').removeClass('in');
+        $(this).closest('.panel-collapse').attr('aria-expanded', 'true').addClass('in');
+
         $(this).closest('.panel').find('.panel-heading a').addClass('active');
         $(this).closest('ul').siblings().addClass('active');
         $(this).closest('ul').parent().siblings().find('a').removeClass('active');
         $(this).closest('li').siblings().find('a').removeClass('active');
         $(this).addClass('active');
         $(this).closest('.panel').siblings().find('a').removeClass('active');
-        console.log("link-click");
       }
     });
 
