@@ -1,3 +1,10 @@
+// html files load
+$(document).ready(function(){
+  $("#header").load("components/header.html");
+  $("#navbar").load("components/nav.html");
+});
+
+
 // Full Screen Toggle
 function toggleFullScreen() {
   const app = document.getElementById("app");
