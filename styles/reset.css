@@ -1,6 +1,6 @@
 *,
 *::before,
-*::after { box-sizing:border-box; } 
+*::after { box-sizing:border-box; margin:0; padding:0; } 
 
 html { -moz-text-size-adjust:none; -webkit-text-size-adjust:none; text-size-adjust:none; } 
 
@@ -19,7 +19,7 @@ ul,
 ol,
 li { list-style:none; margin:0; padding:0; } 
 
-body { font-family:var(--bs-font-sans-serif); font-weight:300; min-height:100vh; line-height:1.5; } 
+body { font-family:"Noto Sans Korean", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; font-weight:300; min-height:100vh; line-height:1.5; } 
 
 h1,
 h2,
@@ -48,3 +48,5 @@ select { font:inherit; outline:0; }
 textarea:not([rows]) { min-height:10em; } 
 
 :target { scroll-margin-block:5ex; } 
+
+#control-bar { position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); }

@@ -3,57 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Project</title>
-
-  <!-- jQuery -->
-  <script type="text/javascript" src="libs/jqeury/3.7.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-  <!-- Bootstrap -->
-  <script src="libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="libs/bootstrap/5.3.3/css/bootstrap.css">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="assets/fonts/font-awesome/6.5.2/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/fonts/font-awesome/6.5.2/css/all.css">
-  <link rel="stylesheet" href="assets/fonts/font-awesome/6.5.2/css/brands.css">
-  <link rel="stylesheet" href="assets/fonts/font-awesome/6.5.2/css/solid.css">
-
-  <!-- Noto Sans Korean -->
-  <link rel="stylesheet" href="assets/fonts/noto-sans-korean/css/noto-sans-korean.css">
-
+  <title>Bootstrap Project</title>
   
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="libs/bootstrap/5.3.3/css/bootstrap.css">
+  <script src="libs/bootstrap/5.3.3/js/popper.min.js"></script>
+  <script src="libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="assets/fonts/noto-sans-korean/css/noto-sans-korean.css">
   <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/common.css">
-  <link rel="stylesheet" href="styles/base.css">
-  <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
-  <div id="app" data-theme="light">
-    <header id="header" class="header"></header>
-    <aside id="panel" class="">
-      <div id="user-info" class="container-wrap">
-        <i class="fa-solid fa-user"></i>
-        <span> John.Doe </span>
-      </div>
-      <nav id="navbar"></nav>
-      <button type="button" onclick="togglePanelSize()"><i class="fa-solid fa-angles-left"></i></button>
-    </aside>
-    <main id="main" class="">
-      <div id="ribbon">
-        <ul>
-          <li class="default">Home</li>
-          <li>Dashboard</li>
-          <li>Analytics</li>
-        </ul>
-      </div>
-      <div id="content" class="">
-        content
-      </div>
-      <footer id="footer" class="">
-        <p>Dashboard 1.0.0 - Web Application Framework by jaeyi © 2024</p>
-      </footer>
-    </main>
+  <div id="app">
+
+    <div id="control-bar" class="d-grid gap-2 col-6 mx-auto">
+      <a class="btn btn-primary active" href="index.html" role="button">Home</a>
+      <a class="btn btn-outline-primary" href="practice-v3.html" role="button">Bootstrap v3</a>
+      <a class="btn btn-outline-secondary disabled" role="button" aria-disabled="true">Bootstrap v4</a>
+      <a class="btn btn-outline-primary" href="practice-v5.html" role="button">Bootstrap v5</a>
+    </div>
+    
   </div>
 </body>
 </html>
