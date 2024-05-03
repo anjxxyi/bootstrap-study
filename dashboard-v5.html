@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Project</title>
-  
-  <!-- Bootstrap -->
+
   <link rel="stylesheet" href="libs/bootstrap/5.3.3/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/fonts/noto-sans-korean/css/noto-sans-korean.css">
+  <link rel="stylesheet" href="styles/reset.css">
   <script src="libs/bootstrap/5.3.3/js/popper.min.js"></script>
   <script src="libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="assets/fonts/noto-sans-korean/css/noto-sans-korean.css">
-  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/dashboard-style.css" />
+  <script type="module" src="scripts/dashboard-script.js"></script>
+  <title>Dashboard v5</title>
 </head>
 <body>
   <div id="app">
-
     <div id="control-bar" class="d-grid gap-2 col-6 mx-auto">
-      <a class="btn btn-primary active" href="index.html" role="button">Home</a>
+      <a class="btn btn-outline-primary" href="index.html" role="button">Home</a>
       <a class="btn btn-outline-primary" href="practice-v3.html" role="button">Bootstrap v3</a>
       <a class="btn btn-outline-secondary disabled" role="button" aria-disabled="true">Bootstrap v4</a>
       <a class="btn btn-outline-primary" href="practice-v5.html" role="button">Bootstrap v5</a>
-      <a class="btn btn-outline-primary" href="dashboard-v5.html" role="button">Dashboard v5</a>
+      <a class="btn btn-primary active" href="dashboard-v5.html" role="button">Dashboard v5</a>
     </div>
-    
   </div>
 </body>
 </html>
