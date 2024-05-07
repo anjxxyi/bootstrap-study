@@ -23,6 +23,7 @@ a {
   text-decoration: none;
 }
 
+#project-group .form-select { font-size: 1.25em; }
 #app {
   width: 100vw;
   height: calc(100vh - 20px);
