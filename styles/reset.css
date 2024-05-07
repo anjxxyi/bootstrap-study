@@ -49,4 +49,5 @@ textarea:not([rows]) { min-height:10em; }
 
 :target { scroll-margin-block:5ex; } 
 
-#control-bar { position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); }
+body.index #project-group { position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); }
+body:not(.index) #project-group select { width:100%; }

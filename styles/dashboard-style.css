@@ -25,7 +25,7 @@ a {
 
 #app {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 20px);
   position: relative;
   padding: var(--header-height) 1rem 0 calc(var(--nav-width) + 1rem);
   font-family: var(--body-font);
@@ -43,7 +43,7 @@ a {
 .header {
   width: 100%;
   height: var(--header-height);
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   display: flex;
@@ -74,7 +74,7 @@ a {
   object-fit: cover;
 }
 .l-navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: var(--nav-width);
@@ -147,10 +147,10 @@ a {
   display: none;
   font-size: 1.25em;
 }
-.active {
+.nav_link.active {
   color: var(--bs-light);
 }
-.active::before {
+.nav_link.active::before {
   content: '';
   position: absolute;
   left: 0;
@@ -167,6 +167,7 @@ a {
   }
 
   #app {
+    height: calc(100vh - 24.5px);
     padding: calc(var(--header-height) + 1rem) 0 0
       calc(var(--nav-width) + 15rem);
   }

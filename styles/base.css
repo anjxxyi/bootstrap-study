@@ -1,7 +1,7 @@
 @charset "utf-8"; .container-wrap { padding:0 15px; } 
 .grid-container { display:grid; } 
 
-#app { display:grid; } 
+#app { display:grid; width:100%; max-height:calc(100vh - 24px); overflow:hidden; } 
 #header { grid-column:1 / span 2; grid-row:1; height:50px; position:sticky; top:0; z-index:999; background:var(--bs-gradient); } 
 #header > .container-wrap { width:100%; height:100%; } 
 #header .grid-container { grid-template-columns:205px auto auto; grid-gap:1em; } 

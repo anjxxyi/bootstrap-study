@@ -1,7 +1,7 @@
 // html files load
 $(document).ready(function(){
-  $("#header").load("components/header.html");
-  $("#navbar").load("components/nav.html");
+  $("#header").load("/components/header.html");
+  $("#navbar").load("/components/nav.html");
 });
 
 

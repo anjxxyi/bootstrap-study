@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Project</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Practice v3</title>
 
   <!-- jQuery -->
   <script type="text/javascript" src="libs/jqeury/3.7.1/jquery.min.js"></script>
@@ -12,7 +13,6 @@
   <!-- Bootstrap -->
   <script src="libs/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="libs/bootstrap/3.4.1/css/bootstrap.css">
-  <!-- <link rel="stylesheet" href="libs/bootstrap/3.4.1/css/bootstrap-theme.css"> -->
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="assets/fonts/font-awesome/6.5.2/css/fontawesome.css">
@@ -22,7 +22,6 @@
 
   <!-- Noto Sans Korean -->
   <link rel="stylesheet" href="assets/fonts/noto-sans-korean/css/noto-sans-korean.css">
-
   
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/common.css">
@@ -30,15 +29,12 @@
   <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
+  <!-- project-group -- START -->
+  <div id="project-group"></div>
+  <script type="text/javascript" src="components/projectGroup.js"></script>
+  <!-- projects-group -- END -->
+  
   <div id="app" data-theme="light">
-    <div id="control-bar" class="d-grid gap-2 col-6 mx-auto">
-      <a class="btn btn-outline-primary" href="index.html" role="button">Home</a>
-      <a class="btn btn-primary active" href="practice-v3.html" role="button">Bootstrap v3</a>
-      <a class="btn btn-outline-secondary disabled" role="button" aria-disabled="true">Bootstrap v4</a>
-      <a class="btn btn-outline-primary" href="practice-v5.html" role="button">Bootstrap v5</a>
-      <a class="btn btn-outline-primary" href="dashboard-v5.html" role="button">Dashboard v5</a>
-    </div>
-
     <header id="header" class="header"></header>
     <aside id="panel" class="">
       <div id="user-info" class="container-wrap">
